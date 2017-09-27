@@ -104,3 +104,12 @@ int main()
 
 
 }
+node * MergeSort(node * A,int beg,int end)
+{
+	while(beg<=end)
+	{
+		int mid= (beg+end)/2;
+
+		MergeSort(node)
+	}
+}
