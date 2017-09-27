@@ -1,3 +1,5 @@
+// well two fruitful hours spent !!
+
 #include <iostream>
 using namespace std;
 void inputArr(bool maze[][20],int n)
