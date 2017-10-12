@@ -1,3 +1,4 @@
+//time complexity of this code is :-O(logn)
 #include <iostream>
 using namespace std;
 bool myBsearch(int ar[],int beg,int end,int ele)
