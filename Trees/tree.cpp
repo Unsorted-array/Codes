@@ -93,6 +93,10 @@ bool findAnode(node * head,int data)
 	  return findAnode(head->right,data);
 	}
 }
+bool heightBalancedOptimised(node * head)
+{
+
+}
 node * mirrorBinaryTree(node * head)
 {
 	if(head == 0)
@@ -124,13 +128,18 @@ int heightBinaryTree( node * head)
 }
 bool heightBalanced(node* head)
 {
+	if (head ==0)
+	{
+		return true;
+	}
 	int lheight = heightBinaryTree(head->left);
 	int rheight = heightBinaryTree(head->right);
 
-	if( abs(lheight - rheight )<=1) return true;
-	return false;
+	return( abs(lheight - rheight )<=1) && heightBalanced(head->left) && heightBalanced(head->right);
+	
 }
-int main()
+node *  CreateLLfromTree()
+int main()0
 {
 	node * head = createBinaryTree(head);
 
